@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "i28511.Hattrick.ApiTrick", "src\i28511.Hattrick.ApiTrick\i28511.Hattrick.ApiTrick.csproj", "{ADBA34BE-D810-4574-AE6D-16CEFCD8B4DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "i28511.Hattrick.ApiTrick.Impl", "src\i28511.Hattrick.ApiTric.Impl\i28511.Hattrick.ApiTrick.Impl.csproj", "{8A7ED27A-4D7A-43F9-BA19-A942B78762DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADBA34BE-D810-4574-AE6D-16CEFCD8B4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBA34BE-D810-4574-AE6D-16CEFCD8B4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBA34BE-D810-4574-AE6D-16CEFCD8B4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBA34BE-D810-4574-AE6D-16CEFCD8B4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7ED27A-4D7A-43F9-BA19-A942B78762DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7ED27A-4D7A-43F9-BA19-A942B78762DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7ED27A-4D7A-43F9-BA19-A942B78762DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7ED27A-4D7A-43F9-BA19-A942B78762DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DF7B62D-BA88-488F-A083-3F780DA6FE3E}
+	EndGlobalSection
+EndGlobal
