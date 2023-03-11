@@ -7,6 +7,10 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
     {
         internal static Match ToMatch(this MatchXml xml)
         {
+
+            if (xml is null)
+                return null;
+
             return new Match
             {
                 AddedMinutes = xml.AddedMinutes,
@@ -35,6 +39,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Goal ToResultModel(this GoalXml xml)
         {
+            if (xml is null)
+                return null;
             return new Goal
             {
                 MatchPart = (MatchPart)xml.MatchPart,
@@ -49,6 +55,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static MatchOfficials ToResponseModel(this MatchOfficialsXml xml)
         {
+            if (xml is null)
+                return null;
             return new MatchOfficials
             {
                 Referee = xml.Referee.ToResponseModel(),
@@ -59,6 +67,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Referee ToResponseModel(this RefereeXml xml)
         {
+            if (xml is null)
+                return null;
             return new Referee
             {
                 RefereeCountryId = xml.RefereeCountryId,
@@ -72,6 +82,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Injury ToResponseModel(this InjuryXml xml)
         {
+            if (xml is null)
+                return null;
             return new Injury
             {
                 InjuryMinute = xml.InjuryMinute,
@@ -85,6 +97,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Booking ToResponseModel(this BookingXml xml)
         {
+            if (xml is null)
+                return null;
             return new Booking
             {
                 BookingMinute = xml.BookingMinute,
@@ -98,6 +112,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Team ToResponseModel(this HomeTeamXml xml)
         {
+            if (xml is null)
+                return null;
             return new Team
             {
                 DressUri = !string.IsNullOrEmpty(xml.DressUri) ? new Uri(xml.DressUri) : null,
@@ -122,6 +138,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Team ToResponseModel(this AwayTeamXml xml)
         {
+            if (xml is null)
+                return null;
             return new Team
             {
                 DressUri = !string.IsNullOrEmpty(xml.DressUri) ? new Uri(xml.DressUri) : null,
@@ -146,6 +164,8 @@ namespace i28511.Hattrick.ApiTrick.Impl.MatchDetails
 
         internal static Arena ToResponseModel(this ArenaXml xml)
         {
+            if (xml is null)
+                return null;
             return new Arena
             {
                 ArenaId = xml.ArenaId,

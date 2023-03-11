@@ -2,7 +2,14 @@
 
 namespace i28511.Hattrick.ApiTrick.Impl.Achievements;
 
-public class AchievementListXml
+
+// NOTE: Generated code may require at least .NET Framework 4.5 or .NET Core/Standard 2.0.
+/// <remarks/>
+[System.SerializableAttribute()]
+[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
+public partial class AchievementListXml
 {
 
     private AchievementListAchievement[] achievementField;
@@ -29,26 +36,26 @@ public class AchievementListXml
 public partial class AchievementListAchievement
 {
 
-    private byte achievementTypeIDField;
+    private int achievementTypeIDField;
 
     private string achievementTitleField;
 
     private string achievementTextField;
 
-    private byte categoryIDField;
+    private int categoryIDField;
 
     private string eventDateField;
 
-    private byte pointsField;
+    private int pointsField;
 
     private string multiLevelField;
 
-    private byte rankField;
+    private int rankField;
 
-    private uint numberOfEventsField;
+    private int numberOfEventsField;
 
     /// <remarks/>
-    public byte AchievementTypeID
+    public int AchievementTypeID
     {
         get
         {
@@ -87,7 +94,7 @@ public partial class AchievementListAchievement
     }
 
     /// <remarks/>
-    public byte CategoryID
+    public int CategoryID
     {
         get
         {
@@ -113,7 +120,7 @@ public partial class AchievementListAchievement
     }
 
     /// <remarks/>
-    public byte Points
+    public int Points
     {
         get
         {
@@ -139,7 +146,7 @@ public partial class AchievementListAchievement
     }
 
     /// <remarks/>
-    public byte Rank
+    public int Rank
     {
         get
         {
@@ -152,7 +159,7 @@ public partial class AchievementListAchievement
     }
 
     /// <remarks/>
-    public uint NumberOfEvents
+    public int NumberOfEvents
     {
         get
         {
@@ -164,4 +171,6 @@ public partial class AchievementListAchievement
         }
     }
 }
+
+
 
